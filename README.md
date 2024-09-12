@@ -25,3 +25,14 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+---
+
+## Explanation:
+
+Core Directory: Contains singleton services used across the application.
+Shared Directory: Contains reusable components, directives, and pipes.
+Feature Components: Each feature has its own components and child components.
+Routing: Configured using the new provideRouter function for standalone components.
+
+1. http://localhost:4200/feature1 - this will load featue1 component only for child, path is: http://localhost:4200/feature1/child
